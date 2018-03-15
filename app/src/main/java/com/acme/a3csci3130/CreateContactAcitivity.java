@@ -25,7 +25,7 @@ public class CreateContactAcitivity extends Activity {
     }
 
     public void submitInfoButton(View v) {
-        //each entry needs a unique ID
+
         String personID = appState.firebaseReference.push().getKey();
         String name = nameField.getText().toString();
         String email = emailField.getText().toString();
